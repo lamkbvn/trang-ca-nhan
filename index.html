@@ -187,35 +187,38 @@
       margin: 0;
     }
 
-@media print {
+    @media print {
 
-  html, body {
-    width: 210mm;
-    height: 297mm;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;   /* chặn sinh trang 2 */
-  }
+      html,
+      body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* chặn sinh trang 2 */
+      }
 
-  body * {
-    visibility: hidden;
-  }
+      body * {
+        visibility: hidden;
+      }
 
-  .container, .container * {
-    visibility: visible;
-  }
+      .container,
+      .container * {
+        visibility: visible;
+      }
 
-  .container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 210mm;
-  }
+      .container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 210mm;
+      }
 
-  .btn-download {
-    display: none;
-  }
-}
+      .btn-download {
+        display: none;
+      }
+    }
 
 
     .section {
@@ -286,23 +289,46 @@
     <div class="right">
 
       <div class="name">Mai Phúc Lâm</div>
-      <div class="position">BACKEND DEVELOPER INTERN</div>
+      <div class="position">.NET Fresher</div>
 
       <div class="section">
         <h3>PROFILE</h3>
         <p>
           Sinh viên Công Nghệ Thông Tin định hướng trở thành Backend Developer.
           Mong muốn được thực tập để áp dụng kiến thức về C# - ASP.Net,
-          RESTful API, MySQL và học hỏi quy trình phát triển phần mềm thực tế.
+          RESTful API, SQL Server và học hỏi quy trình phát triển phần mềm thực tế.
         </p>
       </div>
 
       <div class="section">
-        <h3>PROJECT EXPERIENCE</h3>
+        <h3>Dự Án Cá Nhân</h3>
+
+        <div>
+          <div class="project-title">Hệ thống Xác thực Người dùng</div>
+          <div class="tech">C# - ASP.NET Core, JWT , Redis , Transaction</div>
+
+          <div class="project-link">
+            🔗 <a href="https://github.com/lamkbvn/BookStoreManagement" target="_blank">
+              github.com/lamkbvn/BookStoreManagement
+            </a>
+          </div>
+
+          <ul>
+            <li>Xây dựng chức đăng nhập.</li>
+            <li>Triển khai JWT Authentication.</li>
+            <li>Mã hóa mật khẩu bằng hashPassword</li>
+            <li>Viết CRUD cho Category</li>
+            <li>Dùng Redis để truy vấn nhanh hơn</li>
+            <li>Sử dụng transaction để đảm bảo tính toàn vẹn của dữ liệu</li>
+            <li>Hiểu được cách kết nối được với cơ sở dữ liệu</li>
+          </ul>
+        </div>
+
+        <br>
 
         <div>
           <div class="project-title">Hệ thống Quản lý Bán hàng</div>
-          <div class="tech">C# - ASP.NET Core, MySQL , Clean architecture</div>
+          <div class="tech">C# - ASP.NET Core , Clean architecture</div>
 
           <div class="project-link">
             🔗 <a href="https://github.com/trghieu9415/dotnet-20" target="_blank">
@@ -312,28 +338,8 @@
 
           <ul>
             <li>Xây dựng RESTful API người dùng , thống kê.</li>
-            <li>Tối ưu truy vấn cơ sở dữ liệu.</li>
             <li>Test API bằng Swagger.</li>
             <li>Hiểu được cơ bản về clean architecture</li>
-          </ul>
-        </div>
-
-        <br>
-
-        <div>
-          <div class="project-title">Hệ thống Xác thực Người dùng</div>
-          <div class="tech">C# - ASP.NET Core, JWT</div>
-
-          <div class="project-link">
-            🔗 <a href="https://github.com/username/auth-system" target="_blank">
-              github.com/username/auth-system
-            </a>
-          </div>
-
-          <ul>
-            <li>Xây dựng chức năng đăng ký, đăng nhập.</li>
-            <li>Triển khai JWT Authentication.</li>
-            <li>Mã hóa mật khẩu bằng BCrypt.</li>
           </ul>
         </div>
 
